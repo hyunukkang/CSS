@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>negative amrgin</title>
+<style>
+    .box {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        background:gold;
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+    .right {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        background: coral;
+    }
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box"></div>
+        <!-- inline-blcok 요소가 block요소보다 우선순위가 높다 -->
+        <!--  -->
+        <div class="right"></div>
+    </div>
+</body>
+</html>

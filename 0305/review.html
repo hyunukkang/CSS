@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- link위치는 보통 여기 - link는 태그이기 떄문에 style에 안들어가도 가능 -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+<title>0305 - review</title>
+<style>
+    /* @은 style 안에서 사용가능 */
+    @font-face {
+        font-family: stick;
+        src: url(/font/Stick/Stick-Regular.ttf);
+    }
+    @font-face {
+        font-family: 'RixYeoljeongdo_Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    body {
+        background-color: #555;
+    }
+    .press {
+        color: #333;
+        font-size: 5em;
+        /* x축 y축 shadow-color */
+        text-shadow: 0 -1px #000,
+                     0 1px #777;
+    }
+    /* 기본 폰트 변경 */
+    .sample {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    /* 폰트를 다운받아 변경 */
+    .sample2 {
+        font-family: stick;
+    }
+    /* link or @import */
+    .sample3 {
+        font-family: RixYeoljeongdo_Regular;
+    }
+     /* tag  */
+    p {
+        color: white;
+    }
+    /* class */
+    .sample2 {
+        color: blue;
+    }
+    /* id */
+    #overwrite {
+        color: coral;
+    }
+</style>
+</head>
+<body>
+    <p class="press sample1">
+        Lorem, ipsum.
+    </p>
+    <p class="press sample2">
+        Lorem, ipsum.
+    </p>
+    <p class="press sample3">
+        Lorem, ipsum.
+    </p>
+</body>
+</html>

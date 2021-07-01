@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+
+main#home {
+    text-align: center;
+    line-height: 500px;
+    color: #3e3137;
+    background-color: #fcce01;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>03-layout</title>
+<style>
+    * {
+        margin: 0;
+    }
+    header {
+        height: 100px;
+        background: gold;
+        text-align: center;
+    }
+    nav {
+        height: 80px;
+        background: dodgerblue;
+        text-align: center;
+    }
+    .left {
+        height: 500px;
+        width: 100px;
+        /* !aside bar 는 %값 보다는 fix된 값을 보통 활용 */
+        float: left;
+        background: purple;
+    }
+    .right {
+        width: 100px;
+        height: 500px;
+        background: rgb(104,104, 52);
+        float: right;
+    }
+    main {
+        height: 500px;
+        width: calc(100% - 200px);
+        background: rgb(185, 185, 62);
+        overflow: hidden;
+    }
+    footer {
+        clear:both;
+        text-align: center;
+        background: gold;
+        height: 100px;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>header</h1>
+    </header>
+    <nav>
+        <h1>nav</h1>
+    </nav>
+    <aside class="left">
+        <h1>aside left</h1>
+    </aside>
+    <aside class="right">
+        <h1>aside right</h1>
+    </aside>
+    <main>
+        <h1>main</h1>
+    </main>
+    <footer>
+        <h1>footer</h1>
+    </footer>
+
+</body>
+</html>

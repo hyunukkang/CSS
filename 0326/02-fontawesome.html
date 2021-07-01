@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<title>fontawesome pseudo</title>
+<style>
+    .item {
+        width: 500px;
+        border: 1px solid #000;
+        background: pink;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .item:after {
+        /*  */
+       content: '\f30b'; /* unicode 삽입 */
+       font-family: 'Font Awesome\ 5 Free';
+       font-weight: 900;
+}
+    .item:before {
+        content:"\f369";
+        font-family: 'Font Awesome 5 Brands';
+        font-weight: 400;
+    }    
+</style>
+</head>
+<body>
+
+    <div class="item">
+        lorem
+    </div class="item">
+
+</body>
+</html>

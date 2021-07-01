@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>drop down</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    a {
+        text-decoration: none;
+        color: inherit
+    }
+    li {
+        list-style: none;
+    }
+    header {
+        position: relative;
+        background: coral;
+        width: 100%;
+        height: 100px;
+    }
+    .gnb {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: pink;
+        height: 50px;
+        text-align: center;
+        width: 50%;
+    }
+    .gnb .menu {
+        position: relative;
+        display: inline-block;
+        line-height: 50px;
+        height: 50px;
+        width: 100px;
+        /* margin-right: 50px; */
+        background: #3e3e3e;
+        color: #fff;
+    }
+    .gnb .menu a {
+        display: block;
+    }
+    .gnb .menu a:hover {
+        /* color: #fff; */
+        background: #000;
+    }
+    .menu:hover .menuSub {
+        visibility: visible;
+    }
+    .menuSub {
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        background: #3e3e3e;
+        color: #fff;
+        visibility: hidden;
+        border: 1px solid #000;
+    }
+    .menuSub:before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        width: 10px;
+        height: 10px;
+        background: #3e3e3e;
+        transform: rotate(45deg) translateX(-50%);
+    }
+    .menuSub:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        top: -30px;
+        left: 0%;
+        /* border: 1px solid #000; */
+    }
+    /* .menu:hover .menuSub > a {
+        color: #fff;
+        background: #000;
+    } */
+</style>
+</head>
+<body>
+
+    <header>
+        <ul class="gnb">
+            <li class="menu">
+                <a href="#">menu</a>
+                <ul class="menuSub">
+                    <li><a href="#">menuSub1</a></li>
+                    <li><a href="#">menuSub2</a></li>
+                    <li><a href="#">menuSub3</a></li>
+                </ul>
+            </li>
+            <li class="menu">
+                <a href="#">menu</a>
+                <ul class="menuSub">
+                    <li><a href="#">menuSub1</a></li>
+                    <li><a href="#">menuSub2</a></li>
+                    <li><a href="#">menuSub3</a></li>
+                </ul>
+            </li>
+            <li class="menu">
+                <a href="#">menu</a>
+                <ul class="menuSub">
+                    <li><a href="#">menuSub1</a></li>
+                    <li><a href="#">menuSub2</a></li>
+                    <li><a href="#">menuSub3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+</body>
+</html>

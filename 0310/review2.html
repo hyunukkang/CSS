@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>virtual selector</title>
+<style>
+    .parent p:first-child {
+        color: red;
+    }
+    .parent p:last-child {
+        color: blue;
+    }
+    .parent p:nth-child(3) {
+        color: yellow;
+    }
+
+    /* .parent_2에서 p태그 4번째 선택하기 */
+    
+    /* 틀렸음 
+        .parent_2 p:nth-child(4) {
+        color: teal;
+    } 
+    =중간에 a 태그를 제외한 순서 p태그 한에서만 선택 가능하게 = p:nth-of-type() {}
+    */
+    /* 정답 */
+    .parent_2 p:nth-of-type(4) {
+        color: teal;
+    }
+    
+</style>
+</head>
+<body>
+    <div class="parent">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <hr>
+
+    <div class="parent_2">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href="#">sample</a>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>

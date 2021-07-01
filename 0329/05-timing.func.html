@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>timing fucn</title>
+    <style>
+        ul {
+            padding: 1rem;
+        }
+        li {
+            list-style: none;
+            margin-bottom: 10px;    
+        }
+        .item {
+            background: gold;
+            width: 30%;
+            height: 100px;
+            line-height: 100px;
+            padding-left: 1rem;
+            /* 단위는 rem,em 보다는 px로 한다 - 사용자 기준으로 개발 
+            em은 부모의 요소에 따라 움직줘야할떄 사용되기도 함*/
+            transition: 2s;
+        }
+        ul:hover .item {
+            width: 100%;
+        }
+        li:nth-child(1) .item {
+            transition-timing-function: ease;
+        }
+        li:nth-child(2) .item {
+            transition-timing-function: linear;
+        }
+        li:nth-child(3) .item {
+            transition-timing-function: ease-in;
+        }
+        li:nth-child(4) .item {
+            transition-timing-function: ease-out;
+        }
+        li:nth-child(5) .item {
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>
+            <div class="item">
+                ease
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                linear
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                ease-in
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                ease-out
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                ease-in-out
+            </div>
+        </li>
+    </ul>
+
+</body>
+</html>

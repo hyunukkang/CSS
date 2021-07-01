@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+input[id="modalBtn"] {
+    display: none;
+}
+input[id="modalBtn"]:checked ~ .modalContainer {
+    display: block;
+}
+input[id="modalBtn"] + label {
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 10px;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.modalContainer {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #fff; */
+}
+.modalBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+    background: #fff;
+    z-index: 2;
+
+}
+.modalBox > label {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background: #fff;
+    z-index: 3;
+}
+/* slider */
+.sliderContainer input[name="tab"] {
+    display: none;
+}
+input[id="tab1"]:checked ~ .sliderView label[for="tab1"],
+input[id="tab2"]:checked ~ .sliderView label[for="tab2"],
+input[id="tab3"]:checked ~ .sliderView label[for="tab3"] 
+{
+    background: coral;
+}
+input[id="tab1"]:checked ~ .sliderView label[for="tab1"] {}
+.sliderView {
+    width: 500px;
+    height: 500px;
+    /* overflow: hidden; */
+}
+.sliderList {
+    width: 1500px;
+    height: 500px;
+}
+.sliderItem input {
+    display: none;
+}
+input[id=itemTab1]:checked ~ label[for="itemTab1"] {
+    background: yellowgreen;
+}
+input[id=itemTab2]:checked ~ label[for="itemTab2"] {
+    background: dodgerblue;
+}
+.sliderItem {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    margin-right: -5px;
+}
+.sliderItem > label {
+    background: #999;
+}
+.sliderView .tabBtn {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sliderView > .tabBtn label {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #999;
+    border-radius: 50%;
+}
+/* overlay */
+.modalContainer > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,.3);
+}
+
+

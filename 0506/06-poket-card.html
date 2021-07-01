@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>pocket card</title>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    img {
+        width: 150px;
+        vertical-align: top;
+    }
+    .card {
+        /* 반응형에서는 max-width */
+        max-width: 1200px;
+        margin: 200px auto;
+    }
+    /* 마진병합없애기 */
+    .card:before, 
+    .card:after {
+        content: '';
+        display: table;
+    }
+    .card-item {
+        width: 33.3333%;
+        background: pink;
+        float: left;
+    }
+    .card-item:after { 
+        content: '';
+        clear: both;
+        display: block;
+    }
+    .card-item img {
+        float: left;
+    }
+    .card-desc {
+        overflow: hidden;
+    }
+    @media (max-width: 768px) {
+        .card {
+            background: skyblue;
+        }
+        .card-item {
+            width: 60%;
+            float: none;
+            margin: 1rem auto;
+        }
+    }
+    @media (max-width: 480px) {
+        .card-item {
+            text-align: center;
+            padding: 1rem;
+            min-width: 270px;
+        }
+        .card-item img {
+            /* float: none; */
+            float: initial
+            /* initial -
+            기본속성으로 되돌림
+            ie에서 안됨 */
+        }
+    }
+</style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-item">
+            <img src="./images/pikachu2_300x300.png" alt="">
+            <div class="card-desc">
+                <h1 class="title">
+                    피카츄
+                </h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic qui vitae aliquam quis inventore esse
+                </p>
+            </div>
+        </div>
+        <div class="card-item">
+            <img src="./images/isanghae_300x300.png" alt="">
+            <div class="card-desc">
+                <h1 class="title">
+                    이상해씨
+                </h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic qui vitae aliquam quis inventore esse
+                </p>
+            </div>
+        </div>
+        <div class="card-item">
+            <img src="./images/ggobugi2_300x300.png" alt="">
+            <div class="card-desc">
+                <h1 class="title">
+                    꼬부기
+                </h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic qui vitae aliquam quis inventore esse
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

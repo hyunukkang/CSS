@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>box sizing</title>
+</head>
+<style>
+    .box1 {
+        width: 300px;
+        height: 300px;
+        background-color: skyblue;
+        padding: 10px;
+        border: 10px solid coral;
+    }
+    .box2 {
+        width: 300px;
+        height: 300px;
+        background-color: skyblue;
+        padding: 10px;
+        border: 10px solid coral;
+        box-sizing: border-box;
+    }
+    
+    /*위 코드와 같이 동일한것을 두번 쓰지 말고 동일한것은 한번에 입력! */
+    /* 방법1 */
+    div {
+        width: 300px;
+        height: 300px;
+        background-color: skyblue;
+        padding: 10px;
+        border: 10px solid coral;
+    }
+    /* 방법2. 재사용 > 컴포넌트(부품), 모듈화(부품) */
+    .basic-box {
+        width: 300px;
+        height: 300px;
+        background-color: skyblue;
+        padding: 10px;
+        border: 10px solid coral;
+    }
+
+</style>
+<body>
+
+</body>
+    <div class=".basic-box box1"></div>
+    <div class=".basic-box box2"></div>
+</html>

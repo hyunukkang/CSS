@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+main .homeContainer {
+    height: 500px;
+    background-color: #fcce01;
+    text-align: center;
+    line-height: 500px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>box model</title>
+<style>
+    .parent {
+        width: 200px;
+        /* height: 300px; */
+        background: skyblue;
+        margin: 0 auto;
+    }
+    .child {
+        /* width: 100px;
+        height: 100px; */
+        background: gold;
+        /* padding, margin 의 %값은 부모의 width에 대한 백분율 */
+        /* 부모 block 의 width 값의 % */
+        /* padding-top: 10%;
+        padding-bottom: 10%;
+        padding-right: 10%;
+        padding-left: 10%; */
+        /* 16:9 */
+        width: 100%;
+        height: 0;
+        padding-top: 56.25%;
+        position: relative;
+    }
+    h1 {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+</style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="child">
+            <h1>title</h1>
+        </div>
+    </div>
+
+</body>
+</html>

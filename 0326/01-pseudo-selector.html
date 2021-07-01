@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>pseudo selector basic</title>
+<style>
+    .box {
+        border: 1px solid #000;
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    /* 
+    inline 요소다 
+    content가 무조건 있어야 한다
+    display 속성 변경이 가능하다
+    */
+    span:before {
+        /* content 없이는 생성되지 않는다  */
+        content: 'before - ';
+        color: red;
+        font-size: 50px;
+        background: gold;
+        border: 10px dotted #000;
+        display: inline-block;
+    }
+    span:after {
+        content: ' - after';
+        color: green;
+        font-size: 20px;
+        border: 1px solid #000;
+        display: inline-block;
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <span>font</span>
+    </div>
+</body>
+</html>

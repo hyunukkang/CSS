@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>selector priority</title>
+    <style>
+        /* 우선 순위 5위 */
+        /* important 빈번하게 사용 금지 - 버그,협업문제 발생야기할수있음
+           급하거나 중요할때만 사용,절대적일때만 사용  */
+        p {
+            color: green !important;
+        }
+        /* 우선 순위 4위  */
+        .sample1 {
+            color: coral;
+        }
+        /* 우선 순위 3위 */
+        #sample2 {
+            color: blue;
+        }
+        /* inline style 2위 - 속성style값 */
+
+        /* 우선순위 점수로 결정, 알아두고 특수한경우임 */
+        /* 10= 100 =110 */
+        .sample1 #sample2 {
+            color: blueviolet;
+        /* 1+ 10 + 100 = 111 */
+        }
+        p .sample1 #sample2 {
+            color: burlywood;
+        }
+    </style>
+</head>
+<body>
+
+    <p>안녕하세요 셀럭터 우선 순위 알아보기</p>
+    <p class="sample1">안녕하세요 셀럭터 우선 순위 알아보기</p>
+    <p class="sample1" id="sample2" style="color:blueviolet">안녕하세요 셀럭터 우선 순위 알아보기</p>
+
+</body>
+</html>

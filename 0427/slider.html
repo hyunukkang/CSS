@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>slider</title>
+
+<style>
+    input {
+        display: none;
+    }
+    label {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #999;
+    }
+    input[id="tab1"]:checked ~ label[for="tab1"],
+    input[id="tab2"]:checked ~ label[for="tab2"],
+    input[id="tab3"]:checked ~ label[for="tab3"] 
+    {
+        background: coral;
+    }
+    .container .view {
+        width: 900px;
+    }
+    .container .items {
+        width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    img {
+        margin-right: -5px;
+    }
+</style>
+</head>
+<body>
+
+    <input type="radio" name="tab" id="tab1">
+    <input type="radio" name="tab" id="tab2">
+    <input type="radio" name="tab" id="tab3">
+    <label for="tab1"></label>
+    <label for="tab2"></label>
+    <label for="tab3"></label>
+    <div class="container">
+        <div class="view">
+            <div class="items">
+                <img src="images/float-item.png" alt="">
+                <img src="images/float-item2.png" alt="">
+                <img src="images/float-item3.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

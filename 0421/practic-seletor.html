@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>practice-seclector</title>
+<style>
+    input[id="kimchi"] {
+        width: 100px;
+        display: none;
+    }
+    input[id="kimchi"] ~ label[for="egg"] {
+        color: red;
+        font-style: 30px;
+        display: inline-block;
+        border: 1px solid #000;
+        border-radius: 20px;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+    }
+    /* checked 가 되었을 때 */
+    /* input[id=kimchi]:checked + label + .box {
+        background: gold;
+    } */
+    input[id=kimchi]:checked + label ~ .box .core {
+        background: gold;
+    }
+    .box {
+        display: inline-block;
+        /* width: 100px; */
+        height: 100px;
+        background: green;
+        transition: 1s;
+    }
+    .core {
+        width: 50px;
+        height: 50px;
+        background: skyblue;
+    }
+</style>
+</head>
+<body>
+
+    <!-- 
+        side bar 구현
+        1. label for="id" > input id="id" 연결이 된다
+        2. 인접형제 선택자 input + label
+        3. 일반형제 선택자 input ~ label
+        4. label은 inline 이다
+     -->
+    <!-- name : data key -->
+    <!-- <h1>좋아하는 음식은?</h1> -->
+    <input type="checkbox" name="" id="kimchi">
+    <!-- <label for="kimchi">menu</label> -->
+    <label for="egg">menu</label>
+    <div class="box">
+        <div class="core">
+            menu1
+        </div>
+        <div class="core">
+            menu1
+        </div>
+        <div class="core">
+            menu1
+        </div>
+        <div class="core">
+            menu1
+        </div>
+    </div>
+    <!-- <input type="checkbox" name="" id="soybean">
+    <label for="soybean">된장찌개</label> -->
+    
+</body>
+</html>

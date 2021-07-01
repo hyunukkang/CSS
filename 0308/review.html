@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>review - css</title>
+    <style>
+        div {
+            /* padding */
+            padding: 50px;
+            /* margin */
+            /* margin: 50px; */
+            /* 경계선 */
+            /* border: 10px solid #000; */
+            /* background-color: coral; */
+            /* 넚이 */
+            /* width: 100px; */
+            /* 높이 */
+            /* height: 100px; */
+        }
+
+        /* selector */
+        /* tag, class, id ,*, inline style */
+        /* 복합(complex seletor) */
+        /* 자식셀렉터 */
+        /* .parent >(바로아래) div {
+            bprder: 1px solid #000;
+        } */
+        /* 자손 셀렉터 */
+        .parent div {
+            border: 1px solid #000;
+        }
+
+        /* 인접 형제 셀렉터 */
+        .parent .child+div {
+            background-color: coral;
+        }
+
+        .parent .child~div {
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- box model -->
+    <!-- <div class="boxModel">
+        Box Model
+    </div> -->
+
+    <div class="parent">
+        <div class="child">
+            1
+            <div>1-1</div>
+        </div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>text-transform</title>
+    <style>
+        .sample1 {
+            text-transform: capitalize;
+            /* 첫글자 대문자 */
+        }
+        .sample2 {
+            /* 대문자로 쓰기보단 속성값을 주고 바꾸기 */
+            text-transform: uppercase;
+        }
+        .sample3 {
+            /* 소문자를 대문자로 - 어떤 특성을 나타냄에 따라사용 */
+            text-transform: lowercase;
+        }
+
+        p {
+            text-transform: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p class="sample1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing.
+    </p>
+    <p class="sample2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing.
+    </p>
+    <p class="sample3">
+        Lorem ipsum dolor sit amet consectetur adipisicing.
+    </p>
+
+</body>
+</html>

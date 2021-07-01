@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>image center</title>
+<style>
+    .box1 {
+        width: 500px;
+        height: 500px;
+        background-color: skyblue;
+        /* 방법1 */
+        /* block -> table-cell -> vertical-align은 line-height의 기준점을 변경해줌 */
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        
+        /* 방법2 */
+        /* text-align: center;
+        /* display:block의 line-height 정렬은 image의 base라인 기본으로 맞쳐진다 -> virtical-align으로 기준을 변경해줘야함*/
+        /* line-height: 500px; */
+    }
+    img {
+        /*line-box 기준의 middle 라인에 맞추게 해준다 - virtical-align: middle*/
+        /* line-height의 기본(하행선)기준점을 변경한 값(middle)으로 설정 */
+        /* vertical-align: middle; */
+        width: 200px;
+        height: 200px;
+    }
+</style>
+</head>
+<body>
+    <div class="box1">
+        <img src="image/profile.JPG" alt="">
+    </div>
+</body>
+</html>

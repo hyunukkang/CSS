@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>grid test</title>
+<style>
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    .clearfix:after {
+        content:'';
+        display: block;
+        clear: both;
+    }
+
+    #header {
+        background: pink;
+    }
+    header .logo {
+        float: left;
+    }
+    .gnb {
+        float: right;
+        /* background: blue; */
+        margin-top: 20px;
+    }
+    .gnb .gnb-item {
+        float: left;
+        width: 100px;
+    }
+    @media (max-width: 768px) {
+        .gnb {
+            /* float: none; */
+            /* clear: both; */
+        }
+    }
+</style>
+</head>
+<body>
+
+    <div id="warp">
+        <header id="header" class="clearfix">
+            <img src="./images/alpaca_coding2.png" class="logo" alt="">
+            <ul class="gnb">
+                <li class="gnb-item">
+                    <a href="#">menu1</a>
+                </li>
+                <li class="gnb-item">
+                    <a href="#">menu1</a>
+                </li>
+                <li class="gnb-item">
+                    <a href="#">menu1</a>
+                </li>
+            </ul>
+        </header>
+    </div>
+
+</body>
+</html>

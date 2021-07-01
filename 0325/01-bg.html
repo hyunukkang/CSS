@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>bg practice</title>
+<style>
+    .container {
+        width: 800px;
+        height: 800px;
+        border: 50px dotted #000;
+        margin: 0 auto;
+        /* 배경기본세팅
+        image, no-repeat, cover, center */
+        /* 
+        이미지 파일, 반복, 크기, 위치
+         */
+        /* background-image: url(image/dog-bg.jpg); */
+        /* background-repeat: repeat; */
+        /* background-repeat: no-repeat; */
+        /* background-size: 200px 200px; */
+        /* background-position: 100px 100px; */
+        /* background-position: 50% 50%; */
+        /* background-position: center 0;
+        background-position: center top; */
+
+        /* 
+        1. px
+        2. %
+        3. positoin name
+        background-position: 100px; 
+        하나의 값만 있을땐 자동센터
+        */
+        /* background-repeat: repeat-x; */
+        /* background-repeat: repeat-y; */
+        /* background-size: cover; */
+        /* background-size: contain; */
+        /* background-position: center; */
+        /* 한번에 배경이지미 처리 */
+        background: url(image/dog-bg.jpg) no-repeat center/cover;
+        /* background: url(image/dog-bg.jpg) no-repeat 100px 100px / 200px 200px; */
+        /* background: 
+        url(image/dog-bg.jpg) left top,
+        url(image/dog-bg.jpg) center top,
+        url(image/dog-bg.jpg) right top, */
+        /* url(image/dog-bg.jpg) left center,
+        url(image/dog-bg.jpg) center center,
+        url(image/dog-bg.jpg) right center,
+        url(image/dog-bg.jpg) left,
+        url(image/dog-bg.jpg) center,
+        url(image/dog-bg.jpg) right, */
+        /* url(image/dog-bg.jpg) left bottom,
+        url(image/dog-bg.jpg) center bottom,
+        url(image/dog-bg.jpg) right bottom; */
+        background-origin: border-box;
+        /* border 을 주었을때 상하 잘리지 않고 설정 */
+        background-clip: padding-box;
+        color: blue;
+    }
+</style>
+</head>
+<body>
+    <!-- 
+        1. image : contens
+        2. bg-img : context
+    -->
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam veritatis officiis perspiciatis possimus pariatur, a tenetur ipsum nihil mollitia. Officiis aperiam voluptatibus harum aut, sunt culpa animi quam dignissimos!
+    </div>
+</body>
+</html>

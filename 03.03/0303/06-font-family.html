@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>font-family 적용하기</title>
+
+<style>
+    body {
+        font-family: "nanum gothic";
+    }
+
+    .basic {
+
+    }
+    /* px 많이 사용 */
+    /* 제일 상단 폰트가 먼저 사용됨 */
+    /* 상위 해당 폰트가 없을시 상단폰트 부터 표시 */
+    /* exo 2, nanum gothic 많이 사용 */
+    p.sample1 {
+        font-family:
+        'Franklin Gothic Medium', 
+        'Arial Narrow', 
+        Arial, 
+        sans-serif
+    }
+</style>
+
+</head>
+<body>
+    <p class="basic">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iste, tempore minima voluptatem quo totam ullam iure vero fugit incidunt vitae enim, quam exercitationem amet quae ratione esse consectetur. Tempore?
+    </p>
+    <p class="sample1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iste, tempore minima voluptatem quo totam ullam iure vero fugit incidunt vitae enim, quam exercitationem amet quae ratione esse consectetur. Tempore?
+    </p>
+
+</body>
+</html>

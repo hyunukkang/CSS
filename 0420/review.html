@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title></title>
+<style>
+    /* 
+    position: 위치
+    property: static(정적인): initial value t,l,b,r x 
+    relative(상대적인): 본인 위치에서 시작한다
+    absolute(절대적인): body를 기준으로 한다, 날라다닌다, 붕뜬다
+    fixed(고정): body를 기준으로 한다, 날라다닌다, 붕뜬다,
+                scroll시에도 항상 고정된다
+     */
+     /* 
+     stacking context
+     부모요소에는 pos: relative/absolute/fixed;
+     자식요소에는 pos: absolute; 
+     position 은 항상 기준이 어디인가도 생각!
+     z-index: auto; = 0; > -9999 ~ 9999;
+     */
+    .container {
+        width: 500px;
+        height: 500px;
+        background: pink;
+    }
+    .box {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: skyblue;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

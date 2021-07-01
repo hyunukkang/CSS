@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>06-layout</title>
+<style>
+    * {
+        margin: 0;
+    }
+    header {
+        background: gold;
+        overflow: hidden;
+    }
+    .headerLeft {
+        width: 200px;
+        height: 100px;
+        background: beige;
+        float: left;
+    }
+    .headerRight {
+        float: right;
+        width: 200px;
+        height: 100px;
+        background: deepskyblue;
+    }
+    main {
+        height: 500px;
+        background: #bcb1b3;
+    }
+    section {
+        overflow: hidden;
+        /* background: #000; */
+    }
+    .sectionItem {
+        width: 30%;
+        float: left;
+        margin-right: 5%;
+        /* display: inline-block; */
+        /* width: 32.3333%; */
+        height: 100px;
+        background: #dec8c1;
+    }
+    .sectionItem:last-child {
+        margin-right: 0;
+    }
+    footer {
+        height: 100px;
+        background: gold;
+        /* clear: both; */
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <article class="headerLeft">
+            <h1>left</h1>
+        </article>
+        <article class="headerRight">
+            <h1>right</h1>
+        </article>
+    </header>
+    <main>
+        <h1>main</h1>
+    </main>
+    <section>
+        <article class="sectionItem">
+            <h1>article1</h1>
+        </article>
+        <article class="sectionItem">
+            <h1>article2</h1>
+        </article>
+        <article class="sectionItem">
+            <h1>article3</h1>
+        </article>
+    </section>
+    <footer>
+        <h1>footer</h1>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>virtical align</title>
+    <style>
+        .box1 {
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+            line-height: 500px;
+        }
+        /* block ele */
+        /* line-height */
+        /* 
+        1. inline or inline-block 요소여야 한다
+        2. line-height가 부모요소 높이값과 동일
+        3. vertical-align: middle; 사용하여 중앙 정렬
+        */
+        .innerBox {
+            /* inline 특징을 가지고 있다. 텍스트 처럼 */
+            display: inline-block;
+            vertical-align: middle;
+            width: 200px;
+            height: 200px;
+            background-color: coral;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

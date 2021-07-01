@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>inline - display element</title>
+    <!-- 버튼,로고에 많이 사용 -->
+    <style>
+        body {
+            margin: 10px;
+        }
+
+        /* 버튼에 많이 쓰인다 > 넓이를 가진다. */
+        /* a는 inline이라서 넓이와 높이를 가질 수 없다 */
+        a {
+            /* inline요소를 block으로 바꿀수 있고 바꿔 사용하기도 함 */
+            display: block;
+            font-size: 40px;
+            margin: 10px;
+            text-decoration: none;
+            background-color: #19ce60;
+            color: white;
+            /* border: 1px solid #000; */
+            border-radius: 20px;
+            /* block으로 바꿔 줬기 때문에 넚이 값 사용 가능 */
+            width: 300px;
+            height: 100px;
+            padding-bottom: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        span {
+            /* display: inline; */
+            /* 인라인의 기본 너비 값은 컨텐츠의 너비값 */
+            background-color: blue;
+        }
+
+        .sample1 {
+            background-color: blueviolet;
+            /* 상하 마진을 가질 수 없다 */
+            margin: 30px;
+            /* 패딩은 가질 수 있다 */
+            padding: 30px;
+        }
+
+        .sample2 {
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- inline 태그와 속성 -->
+    <!-- <span class="sample2">Lorem ipsum dolor sit amet.</span>
+    <span class="sample1">Lorem ipsum dolor sit amet.</span>
+    <span class="sample2">Lorem ipsum dolor sit amet.</span> -->
+    <!-- 기본넓이 값은 콘텐츠의 넓이 값을 가진다
+    -width,height 값을 갇지 못한다 - 값을 줘도 먹히지 않음!  -->
+    <!-- <span>sample</span> -->
+
+    <a href="https://www.naver.com">naver</a>
+    <a href="https://www.google.com">google</a>
+    <a href="https://www.kakaocorp.com">kakaocorp</a>
+</body>
+
+</html>

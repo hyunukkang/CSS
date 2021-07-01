@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>logo</title>
+    <style>
+        .logo {
+            background-color: skyblue;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        /* .logo a 로 코드 작성 습관! */
+        .logo a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            background-color: green;
+            text-transform: uppercase;
+            border-radius: 30px;
+        }
+
+        .logo a:link {
+            color: #fff;
+        }
+
+        .logo a:visited {
+            color: #fff;
+            background-color: #ddd;
+        }
+
+        .logo a:hover {
+            background-color: green;
+        }
+
+        .logo a:active,
+        .logo a:focus {
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="logo">
+        <a href="http://www.naver.com">
+            naver
+        </a>
+    </h1>
+</body>
+
+</html>

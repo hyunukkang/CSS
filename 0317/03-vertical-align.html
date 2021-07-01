@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>vertical-align</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+        vertical-align: top;
+        /* vertical-aling은 top을 기준으로 한다 */
+        /* inline-block일때 사용가능하다. block일때는 사용 불가 */
+    }
+    .txtBox {
+        background-color: skyblue;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 60px;
+    }
+    input {
+        background-color: skyblue;
+        margin-top: 90px;
+    }
+</style>
+</head>
+<body>
+
+<div class="box">
+    <!-- inline-block 일때 vertical-align이 적용됨 (자체에 기준을 하기 때문) -->
+    <img src="image/profile.JPG" alt="">
+    <div class="txtBox">
+        <h1>title</h1>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <input type="text">
+</div>
+</body>
+</html>

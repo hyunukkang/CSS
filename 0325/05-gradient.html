@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>gradient</title>
+<style>
+    .box {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        /* background: linear-gradient(to right, #E66465, #9198E5); */
+        /* background: linear-gradient(to right bottom, #E66465, #9198E5); */
+    }
+    .box.top {
+        background: linear-gradient(to top, #E66465, #9198E5)
+    }
+    .box.right {
+        background: linear-gradient(to right, #E66465, #9198E5)
+    }
+    .box.bottom {
+        background: linear-gradient(to bottom, #E66465, #9198E5)
+    }
+    .box.left {
+        background: linear-gradient(to left, #E66465, #9198E5)
+    }
+</style>
+</head>
+<body>
+
+    <div class="box top"></div>
+    <div class="box right"></div>
+    <div class="box bottom"></div>
+    <div class="box left"></div>
+
+</body>
+</html>

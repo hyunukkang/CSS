@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>border</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            border: 3px solid #000;
+            margin: 100px;
+            /* border-radius: 10px; */
+            /* border-radius: 40px 30px 50px 0px; */
+            border-radius: 50%;
+            /* 현재 200px 도형 = 100px - radius 반틈 */
+        }
+
+        /* 공통사항,중복사항 한번에 해결 */
+        /* 코드 재사용, 모듈화 */
+        .mainColor {}
+
+        div.basicBox {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: red;
+            border: 1px solid black;
+        }
+
+        .box2 {
+            /* width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: red; */
+            border-radius: 10px 0 10px 0;
+        }
+
+        .box3 {
+            /* width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: red;
+            border: 1px solid black; */
+            border-radius: 0 10px 0 0;
+        }
+
+        .box4 {
+            /* width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: red;
+            border: 1px solid black; */
+            border-radius: 50px 30px 30px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+
+    </div>
+    <!-- basicBox 설정을 입력 함으로써 해결 -->
+    <div class="box2 basicBox">
+
+    </div>
+    <div class="box3">
+
+    </div>
+    <div class="box4">
+
+    </div>
+</body>
+
+</html>

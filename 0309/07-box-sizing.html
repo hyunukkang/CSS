@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>box sizing</title>
+<style>
+    * {
+        /* 기준을(border,padding,contents를 더한 최종값이) width, height가 되게 
+        - border,padding, contents 모두합한 영역이 width,height가 되게함 */
+        box-sizing: border-box;
+    }
+
+    .box1 {
+        width: 600px;
+        height: 100px;
+        background-color: skyblue;
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 10px solid red;
+        box-sizing: border-box;
+        /* box-sizing: content-box; - 기본값 */
+    }
+    .box2 {
+        width: 600px;
+        height: 100px;
+        background-color: skyblue;
+        padding: 20px;
+        border: 10px solid red;
+    }
+</style>
+</head>
+<body>
+    <div class="box1">
+
+    </div>
+    <div class="box2">
+
+    </div>
+</body>
+</html>

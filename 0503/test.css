@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+/* reset.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/* layout */
+.inner {
+    margin: 0 auto;
+    width: 640px;
+}
+/* header */
+header {
+    height: 100px;
+    background: gold;
+    overflow: hidden;
+}
+.headerTitle {
+    float: left;
+    line-height: 100px;
+}
+.headerNav {
+    float: right;
+}
+.headerNavItem {
+    float: left;
+    line-height: 100px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+/* recommend */
+.recommend:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+.recommendTitle {
+    padding: 10px;
+}
+.recommendContainer {
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+.recommendItem {
+    float: left;
+    padding: 1rem;
+    background: beige;
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.recommendItem:nth-child(2n) {
+    margin-right: 0;
+}
+.recommendItem img {
+    float: left;
+    height: 150px;
+    border-radius: 10px;
+}
+.recommendDesc {
+    vertical-align: top;
+    overflow: hidden;
+    padding-left: 10px;
+}
+.recommendDesc h4 {
+    
+}
+.recommendDesc p {
+    font-size: 10px;
+}
+.recommendDesc a {
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: #ddd;
+    margin: 5px 0;
+    padding: 2px;
+}
+/* category */
+.category {
+}
+.category:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+.categoryTitle {
+    padding: 1rem;
+}
+.categoryContainer {
+    width: 100%;
+    overflow: hidden;
+}
+.categoryItem {
+    width: 22%;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    float: left;
+    margin-right: 4%;
+    margin-bottom: 4%;
+    background: beige;
+}
+.categoryItem:nth-child(4n) {
+    margin-right: 0;
+}
+.categoryItem p {
+    font-size: 10px;
+}
+.categoryItem h3 {
+    font-size: 16px;
+}
+/* footer */
+footer {
+    width: 100%;
+    background: gold;
+}
+.footerContainer {
+    width: 50%;
+    margin: 0 auto;
+}
+footer .links {
+    width: 49%;
+    display: inline-block;
+    text-align: center;
+}
+.linksItem {
+    font-size: 15px;
+    padding: 5px
+}
+.linksItem a {
+    display: block;
+}
+
+
+
+
+

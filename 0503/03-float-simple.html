@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>float simple1</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* common */
+    .clearfix:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    header {
+        background: url(./img/float-sample-header-bg.jpg) no-repeat center/cover;
+        /* height: 200px; */
+        padding-top: 10%;
+        height: 0;
+        position: relative;
+        /* height값은 content 영역까지 잡기 때문에 0 */
+    }
+    .eaderTitle {
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    }
+    .travel {
+        width: 640px;
+        height: 100vh;
+        margin: 0 auto; 
+        background: pink;
+        position: relative;
+    }
+    .travel_item {
+        background: beige;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+    .travel_item img {
+        float: left;
+    }
+    .travel_item img:nth-child(2n) {
+        text-align: right;
+    }
+    .travelItemDesc {
+        background: skyblue;
+        overflow: hidden;
+    }
+    .travelItemDesc a {
+        margin-top: 10px;
+        padding: 10px;
+        background: pink;
+        border: 1px solid #000;
+        border-radius: 10px;
+        text-decoration: none;
+        color: inherit
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <h1 class="headerTitle">beginning your journey</h1>
+    </header>
+    <!-- 
+        .travel .item .desc{}
+        <bem>
+        Block__Element-modifier
+        .travel__item-desc
+        <camelCase>
+        .travelItemDesc
+     -->
+    <section class="travel">
+        <div class="travel_item clearfix">
+            <img src="./img/float-item.png" alt="">
+            <div class="travelItemDesc">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione sit alias quis adipisci fuga iusto accusamus perspiciatis necessitatibus? Non possimus recusandae fugiat quod dolorem dignissimos facere in! Voluptatem, aspernatur possimus.
+                </p>
+                <a href="#"></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="slider.css">
+<title>slider</title>
+</head>
+<body>
+
+    <input type="checkbox" id="modalBtn">
+    <label for="modalBtn">show</label>
+
+    <div class="modalContainer">
+        <div class="modalBox">
+            <label for="modalBtn">x</label>
+            <div class="sliderContainer">
+                <input type="radio" name="tab" id="tab1" checked>
+                <input type="radio" name="tab" id="tab2">
+                <input type="radio" name="tab" id="tab3">
+                <div class="sliderView">
+                    <div class="sliderList">
+                        <div class="sliderItem">
+                            <h1>title</h1>
+                            <input type="radio" name="itemTab" id="itemTab1">
+                            <input type="radio" name="itemTab" id="itemTab2">
+                            <label for="itemTab1">left</label>
+                            <label for="itemTab2">right</label>
+                        </div>
+                        <div class="sliderItem">
+                            <h1>title</h1>
+                            <p>2</p>
+                        </div>
+                        <div class="sliderItem">
+                            <h1>title</h1>
+                            <p>3</p>
+                        </div>
+                    </div>
+                    <div class="tabBtn">
+                        <label for="tab1"></label>
+                        <label for="tab2"></label>
+                        <label for="tab3"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <label for="modalBtn">overlay</label>
+    </div>
+</body>
+</html>

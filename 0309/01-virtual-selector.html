@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>virtual selector</title>
+    <style>
+        div {
+            font-size: 100px;
+            background-color: coral;
+            color: #fff;
+        }
+
+        a {
+            /* 자기자신에게 컬러를 직접 주거나 inherit속성부여해 부모요소를 색을 따라가게 함 */
+            font-size: 100px;
+            /* color: #fff; */
+            color: inherit;
+        }
+
+        /* 방문하지 않은 상태일때를 선택 */
+        a:link {
+            color: black;
+        }
+
+        /* 방문한 상태 일 때 */
+        a:visited {
+            color: skyblue;
+        }
+
+        /* 마우스가 올라간 상태 일 때 */
+        a:hover {
+            background-color: #ddd;
+        }
+
+        /* 클릭된 상태 일때 */
+        a:active {
+            background-color: slateblue;
+        }
+
+        /* 포커스가 되었을때 */
+        /* tap키 로 선택 되었을때 */
+        a:focus {
+            background-color: slateblue;
+        }
+
+        /* 한번에 입력 */
+        /* 둘은 대부분 한번에 입력 */
+        a:active,a:focus {
+            background-color: slateblue;
+        }
+
+        /* 사용자가 반응하는 순서대로(위에 순서대로) 진행
+            -제대로 작동 하지 않을 수 있음 */
+    </style>
+</head>
+
+<body>
+    <h1>가상 셀렉터</h1>
+    <div>
+        <a href="http://www.naver.com">
+            naver
+        </a>
+    </div>
+    <hr>
+    <a href="https://www.thehersheycompany.com/ko_kr/home.html">
+        hershes
+    </a>
+    <hr>
+    <a href="https://www.yahoo.com/">
+        yahoo
+    </a>
+</body>
+
+</html>
