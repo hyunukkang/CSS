@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>aside</title>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    ul,li {
+        list-style: none;
+    }
+    .aside {
+        width: 30%;
+        height: 100vh;
+        background: pink;
+        padding: 30px 10px;
+    }
+    .aside ul li {
+        color: #fff;
+        opacity: .5;
+        font-size: 30px;
+        padding: 5px 10px;
+        transition: all 0.5s;
+    }
+    ul li:before {
+        content: ">";
+        /* > 쓰지 말고 실제문자참고 혹은 before,affter 활용 */
+    }
+    .aside ul li:hover {
+        opacity: 1;
+    }
+    
+</style>
+</head>
+<body>
+
+    <div class="aside">
+        <ul>
+            <li>&gt; new arrival</li>
+            <li>> summer collection</li>
+            <li>> winter collection</li>
+            <li>> special offers</li>
+            <li>> sale</li>
+        </ul>
+    </div>
+
+</body>
+</html>
